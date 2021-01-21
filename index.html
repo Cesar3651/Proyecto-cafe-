@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAFE  </title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+      <header>
+       <a href="#" class="logo"><img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/coffee-shop-logo-template-design-5a0e3cea955fde66f5e8e4e07c8759a1_screen.jpg?ts=1561483338https://d1csarkz8obe9u.cloudfront.net/posterpreviews/coffee-shop-logo-template-design-5a0e3cea955fde66f5e8e4e07c8759a1_screen.jpg?ts=1561483338"></a>
+       
+        <ul>    
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">QUIENES SOMOS</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+      </header>
+      <div class="contenido">
+        <div class="cajatexto">
+           <h2> No es solo un cafe <br>  Es el mejor y lo sabes <span>ATREVETE</span></h2>
+           <p>El café especial, en el sentido estricto, o café gourmet, se caracteriza por una calidad excepcional en taza, y por no tener defectos. Este tipo de café especial permite a los tostadores incorporar, sobre la mezcla básica de arábiga y robusta, proporciones variables de cafés con rasgos particulares que le otorgan una “diferencia” al producto.</p>
+            <a href="#">Conoce mas </a>
+
+        </div>
+         <div class="Imgcaja">
+             <img src="Images/img1.png" class="cafe">
+         </div>
+      </div>
+      <ul class="thumb">
+          <li><a href="#"><img src="Images/thumb1.png" onclick="imgSlider('Images/img1.png');changeCirclecolor('#017143')"> </a>  </li>
+          <li><a href="#"><img src="Images/thumb2.png" onclick="imgSlider('Images/img2.png');changeCirclecolor('#eb7495')"> </a> </li>
+          <li><a href="#"><img src="Images/thumb3.png" onclick="imgSlider('Images/img3.png');changeCirclecolor('#d752b1')"></a> </li>
+      </ul>
+      <ul class="icon">
+        <li><a href="#"><img src="Images/facebook.png"></a>  </li> 
+        <li><a href="#"><img src="Images/instagram.png"></a>  </li>
+        <li><a href="#"><img src="Images/twitter.png"></a>  </li>
+        </ul>
+    </section>  
+    <script type="text/javascript"> 
+    function imgSlider(anything) {
+        document.querySelector('.cafe').src=anything;
+    }
+    function changeCirclecolor(color) {
+       const circle = document.querySelector('.circle');
+       circle.style.background = color;
+    }
+    </script>
+   
+</body>
+</html>
